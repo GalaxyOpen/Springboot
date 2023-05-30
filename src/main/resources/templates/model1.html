@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>model1</h3>
+이제부터 타임리프 문법을 쓸꺼임
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org"> 잘 기억해두셈. 시작태그에다 쓸꺼임-->
+
+<p>${param1}</p>
+<!--이 문법은 여기서 쓸 수도 없기에 쓰면 안됨-->
+
+<p>[[${param1}]]</p>
+<!--대괄호 두개 열고, 그 안에 달러 열고 중괄호 넣어라 // people: 이거 왤케 김 안씀-->
+
+<p th:text="${param1}"></p>
+<h2 th:text="${param2}"></h2>
+<!--그래서 이걸 많이 씀 위에 xmls:th에서 따온 것으로 보임.
+그리고 F12로도 안보임(아주 자연스럽게 html문서로 녹아들어감)-->
+</body>
+</html>
